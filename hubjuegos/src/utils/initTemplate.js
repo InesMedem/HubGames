@@ -1,4 +1,6 @@
 // initTemplate.js -----> dentro de utils
+import { PrintTemplateHeader, PrintTemplateFooter } from "../components";
+
 export const initTemplate = () => {
   const app = document.getElementById("app");
 
@@ -8,5 +10,9 @@ export const initTemplate = () => {
   const footer = document.createElement("footer");
 
   //? -------> inyectamos os elementos en el contenedor de la app
+
   app.append(header, main, footer);
+
+  PrintTemplateHeader();
+  PrintTemplateFooter();
 };
