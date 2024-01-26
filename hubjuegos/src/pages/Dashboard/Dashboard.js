@@ -55,4 +55,5 @@ export const printTemplateDashboard = () => {
 
   /** metemos los escuchadores de la pagina */
   addEventListeners();
+  getInfo();
 };
