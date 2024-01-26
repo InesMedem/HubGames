@@ -1,4 +1,4 @@
-// globalstate.js ------> global/state/globalstate.js
+// globalState.js ------> global/state/globalState.js
 
 //! -----------------------------------------------------------------------------------
 //?-----------------> INICIALIZACION EN LAZY DEL ESTADO ------------------------------

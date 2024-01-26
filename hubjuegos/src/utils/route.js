@@ -1,4 +1,4 @@
-import { getUser } from "../global/state/globalstate";
+import { getUser } from "../global/state/globalState";
 import { Login, PrintPokemonPage, printTemplateDashboard } from "../pages";
 /// estas paginas se haran en el punto 6 ------> Login, PrintPokemonPage, printTemplateDashboard
 
