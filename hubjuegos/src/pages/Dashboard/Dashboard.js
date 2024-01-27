@@ -1,5 +1,5 @@
 //Dashboard.js ------> src/componets/Dashboard/Dashboard.js
-import { initControler } from "../../utils";
+import { getInfo, initControler } from "../../utils";
 import "./Dashboard.css";
 
 const template = () => `
@@ -15,13 +15,13 @@ const template = () => `
         </figure>
       </li>
       <li>
-        <figure>
+        <figure id="navigateTopo">
           <img
             src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761641/pngwing.com_1_iq8zfk.png"
             alt=" go to wacka topo game"
           />
           <h2>WACKA TOPO</h2>
-        </figure>
+        </figure id="navigateTopo>
       </li>
       <li>
         <figure>
@@ -43,6 +43,11 @@ const addEventListeners = () => {
   const navigatePokemon = document.getElementById("navigatePokemon");
   navigatePokemon.addEventListener("click", () => {
     initControler("Pokemon");
+  });
+
+  const navigateTopo = document.getElementById("navigateTopo");
+  navigateTopo.addEventListener("click", () => {
+    initControler("Topo");
   });
 };
 

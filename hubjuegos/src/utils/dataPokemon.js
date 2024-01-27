@@ -126,8 +126,6 @@ export const filterPokemon = (filterDataInputButton, donde) => {
 };
 
 export const getInfo = async () => {
-  console.log("🚀 ~ getInfo ~ getInfo:", getInfo);
-  console.log("actualizando info... 👌🔍");
   const data = await dataPokemon();
   setData(data, "Pokemon");
 };

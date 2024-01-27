@@ -1,5 +1,10 @@
 import { getUser } from "../global/state/globalState";
-import { Login, PrintPokemonPage, printTemplateDashboard } from "../pages";
+import {
+  Login,
+  PrintPokemonPage,
+  printTemplateDashboard,
+  PrintTopoPage,
+} from "../pages";
 /// estas paginas se haran en el punto 6 ------> Login, PrintPokemonPage, printTemplateDashboard
 
 //! ----------------------------------------------------------------------------------------------------------------------
@@ -18,7 +23,7 @@ export const initControler = (pagesRender) => {
       printTemplateDashboard();
       break;
     case "Topo":
-      "PrintTopoPage() -----> en caso de que lo haya";
+      PrintTopoPage();
       break;
     case "Login":
       Login();
