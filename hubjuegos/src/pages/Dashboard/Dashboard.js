@@ -1,39 +1,39 @@
-//Dashboard.js ------> src/componets/Dashboard/Dashboard.js
 import { getInfo, initControler } from "../../utils";
 import "./Dashboard.css";
 
 const template = () => `
-  <div id="containerDashboard">
-    <ul>
-      <li>
-        <figure id="navigatePokemon">
-          <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761508/pngwing.com_r0hr9b.png"
-            alt="go to page pokemon"
-          />
-          <h2>POKEMON</h2>
-        </figure>
-      </li>
-      <li>
-        <figure id="navigateTopo">
-          <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761641/pngwing.com_1_iq8zfk.png"
-            alt=" go to wacka topo game"
-          />
-          <h2>WACKA TOPO</h2>
-        </figure id="navigateTopo>
-      </li>
-      <li>
-        <figure>
-          <img
-            src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761735/6168776_kfna36.png"
-            alt="go to memory game"
-          />
-          <h2>MEMORY GAME</h2>
-        </figure>
-      </li>
-    </ul>
-  </div>
+<div id="containerDashboard">
+<ul>
+  <li>
+    <figure id="navigatePokemon">
+      <img
+        src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761508/pngwing.com_r0hr9b.png"
+        alt="go to page pokemon"
+      />
+      <h2>POKEMON</h2>
+    </figure>
+  </li>
+  <li>
+    <figure id="navigateTopo">
+      <img
+        src="https://res.cloudinary.com/dwfemumfv/image/upload/v1706460881/monty-mole_mcr9fu.png"
+        alt=" go to wacka topo game"
+      />
+      <h2>WACKA A TOPO</h2>
+    </figure>
+  </li>
+  <li>
+    <figure id="navigateDigimon">
+      <img
+        src="https://res.cloudinary.com/dwfemumfv/image/upload/v1706460632/DigimonMonster_erbzga.png"
+        alt="go to digimon cards"
+      />
+      <h2> DIGIMON CARDS</h2>
+    </figure>
+  </li>
+</ul>
+</div>
+
 `;
 
 const addEventListeners = () => {
@@ -48,6 +48,11 @@ const addEventListeners = () => {
   const navigateTopo = document.getElementById("navigateTopo");
   navigateTopo.addEventListener("click", () => {
     initControler("Topo");
+  });
+
+  const navigateDigimon = document.getElementById("navigateDigimon");
+  navigateDigimon.addEventListener("click", () => {
+    initControler("Digimon");
   });
 };
 
