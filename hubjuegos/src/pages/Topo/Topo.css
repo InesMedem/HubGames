@@ -2,20 +2,22 @@
 
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  /*background: url("./mario-bg.jpg");*/
+  background: url("https://res.cloudinary.com/dwfemumfv/image/upload/v1706460888/mario-bg_zdinps.jpg");
   background-size: cover;
+  width: 2140px;
+  height: 900px;
 }
 
 #board {
-  width: 540px;
-  height: 540px;
-
+  width: 555px;
+  height: 555px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  background: url("./soil.png");
+  background: url("https://res.cloudinary.com/dwfemumfv/image/upload/v1706460856/soil_ioqoro.png");
   background-size: cover;
-  border-radius: 25px;
+  border-radius: 25px; 
+  border: 3px solid white;
 
 }
 
@@ -23,7 +25,7 @@
   /* board = 540x540, divide into 3x3 tiles*/
   width: 180px;
   height: 180px;
-  background-image: url("./pipe.png");
+  background-image: url("https://res.cloudinary.com/dwfemumfv/image/upload/v1706460856/pipe_n6vmsf.png");
   background-size: cover;
 
 }
