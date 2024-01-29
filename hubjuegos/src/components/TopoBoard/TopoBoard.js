@@ -1,4 +1,5 @@
 import "./TopoBoard.css";
+import { setMole, setPlant, selectTile } from "../../utils";
 
 export const TopoBoard = () => {
   //set up the grid in html
@@ -7,7 +8,9 @@ export const TopoBoard = () => {
     //<div id="0-8"></div>
     let tile = document.createElement("div");
     tile.id = i.toString();
-    //tile.addEventListener("click", selectTile);
+    tile.addEventListener("click", selectTile);
     document.getElementById("board").appendChild(tile);
   }
+  setInterval(setMole, 1000); // 1000 miliseconds = 1 second, every 1 second call setMole
+  setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant
 };

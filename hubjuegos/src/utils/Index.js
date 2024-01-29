@@ -5,4 +5,4 @@ export * from "./axios";
 export * from "./dataPokemon";
 export * from "./typePokemon";
 export * from "./paginacion";
-export * from "./getRandomTile";
+export * from "./topoGame";
