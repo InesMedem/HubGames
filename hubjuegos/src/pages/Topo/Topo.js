@@ -21,77 +21,41 @@ let currPlantTile;
 let score = 0;
 let gameOver = false;
 
-function setGame() {
-  //set up the grid in html
-  for (let i = 0; i < 9; i++) {
-    //i goes from 0 to 8, stops at 9
-    //<div id="0-8"></div>
-    let tile = document.createElement("div");
-    tile.id = i.toString();
-    tile.addEventListener("click", selectTile);
-    document.getElementById("board").appendChild(tile);
-  }
-  setInterval(setMole, 1000); // 1000 miliseconds = 1 second, every 1 second call setMole
-  setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant
-}
+// function to set up the game
+// set up the grid in HTML
+// create a div element for each tile on the board
+// attach a click event listener to each tile
+// append the tile to the board element in html
+// set the intervals to the board element in the html
+// set up intervals to periodically spawn mole and plan images on the baord
 
-function getRandomTile() {
-  //math.random --> 0-1 --> (0-1) * 9 = (0-9) --> round down to (0-8) integers
-  let num = Math.floor(Math.random() * 9);
-  return num.toString();
-}
+// function to get random tile on the board
 
-function setMole() {
-  if (gameOver) {
-    return;
-  }
-  if (currMoleTile) {
-    currMoleTile.innerHTML = "";
-  }
-  let mole = document.createElement("img");
-  mole.src =
-    "https://res.cloudinary.com/dwfemumfv/image/upload/v1706460881/monty-mole_mcr9fu.png";
+// function to set a mole image on a random tile
 
-  let num = getRandomTile();
-  if (currPlantTile && currPlantTile.id == num) {
-    return;
-  }
-  currMoleTile = document.getElementById(num);
-  currMoleTile.appendChild(mole);
-}
+// clear the previous mole tile
 
-function setPlant() {
-  if (gameOver) {
-    return;
-  }
-  if (currPlantTile) {
-    currPlantTile.innerHTML = "";
-  }
-  let plant = document.createElement("img");
-  plant.src =
-    "https://res.cloudinary.com/dwfemumfv/image/upload/v1706460883/piranha-plant_jetrep.png";
+// create a new mole element
 
-  let num = getRandomTile();
-  if (currMoleTile && currMoleTile.id == num) {
-    return;
-  }
-  currPlantTile = document.getElementById(num);
-  currPlantTile.appendChild(plant);
-}
+// get a random tile, making sure not to overlap with the current plant tile
 
-function selectTile() {
-  if (gameOver) {
-    return;
-  }
-  if (this == currMoleTile) {
-    score += 10;
-    document.getElementById("score").innerText = score.toString(); //update score html
-  } else if (this == currPlantTile) {
-    document.getElementById("score").innerText =
-      "GAME OVER: " + score.toString(); //update score html
-    gameOver = true;
-  }
-}
+// set the current mole tile and append the mole image to it
+
+// function to set the plant image on a random tile
+
+// clear the previous plant tile
+
+// create a new plant image element
+
+// get random tile, making sure not to overlap with the current mole tile
+
+// set the current plan tile and append the plant image to it
+
+// function to handel the click event on a tile
+
+// check if the clicked tile is the mole tile
+// increase the score and update the score in the HTML
+// if the clicked tile is the plant tile, end the game and display teh final score
 
 //! ------------------------------------------------------------------------------
 //? ---------------------FUNCION QUE SE EXPORTA QUE PINTA LA PAGINA--------------
