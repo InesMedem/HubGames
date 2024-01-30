@@ -1,21 +1,20 @@
 import "./Digimon.css";
-//! ------------------------------------------------------------------------------
-//? ------------------------------TEMPLATE INICIAL--------------------------------
-//! ------------------------------------------------------------------------------
+import { getData } from "../../global/state/globalState";
+
+import { CartaDigimon } from "../../components";
+//import { dataDigimonGlobal, dataDigimon, getInfoDigimon } from "../../utils";
+
 const template = () => `
-<div id="figure">
-<img id= "img" src=${digimon.image} />
-<h3>${digimon.name}</h3>
-</div>
+<div id="digimonDiv"></div>
 `;
 
-//! ------------------------------------------------------------------------------
-//? ------------------------------LOGICA DEL JUEGO -------------------------------
-//! ------------------------------------------------------------------------------
+const dataServiceDigimon = async () => {
+  const getDataDigimon = getData("Digimon");
 
-//! ------------------------------------------------------------------------------
-//? ---------------------FUNCION QUE SE EXPORTA QUE PINTA LA PAGINA--------------
-//! ------------------------------------------------------------------------------
+  const { digimonData, type } = getDataDigimon;
+};
+
 export const printDigimonPage = () => {
   document.querySelector("main").innerHTML = template();
+  dataServiceDigimon();
 };

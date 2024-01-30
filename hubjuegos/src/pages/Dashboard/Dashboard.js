@@ -1,3 +1,4 @@
+import { getIntervalMole } from "../../global/state/topoState";
 import { getInfo, initControler } from "../../utils";
 import "./Dashboard.css";
 
@@ -7,7 +8,7 @@ const template = () => `
   <li>
     <figure id="navigatePokemon">
       <img
-        src="https://res.cloudinary.com/dq186ej4c/image/upload/v1689761508/pngwing.com_r0hr9b.png"
+        src="https://res.cloudinary.com/dwfemumfv/image/upload/v1706608200/Untitled_design_1_sojbsu.png"
         alt="go to page pokemon"
       />
       <h2>POKEMON</h2>
@@ -58,6 +59,8 @@ const addEventListeners = () => {
 
 export const printTemplateDashboard = () => {
   /** Como siempre las paginas se renderizan en el main por lo cual inyectamos el template en el contenedor del main */
+  clearInterval(getIntervalMole().idMoleOne);
+  clearInterval(getIntervalMole().idMoleTwo);
   document.querySelector("main").innerHTML = template();
 
   /** Para la nav, que la habiamos ocultado en el login, la volvemos a renderizar cambiandole el display de none a flex */

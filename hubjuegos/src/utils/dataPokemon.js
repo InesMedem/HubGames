@@ -1,4 +1,3 @@
-// dataPokemon.js -----> src/utils/dataPokemon.js
 import { setData } from "../global/state/globalState";
 import { getByIdPokemon } from "../services/pokemon.service";
 import { Paginacion } from "./paginacion";

@@ -1,16 +1,17 @@
-/*ButtonFilter.css ------> src/components/ButtonFilter/ButtonFilter.css*/
 #filterButton {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 90vw;
-    margin: 3rem 0 1rem 0;
-  }
-  
-  .buttonFilter {
-    width: 5rem;
-    height: 2rem;
-    border-radius: 5px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 90vw;
+  margin: 3rem 0 1rem 0;
+}
+
+.buttonFilter {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Adjust the font size as needed */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

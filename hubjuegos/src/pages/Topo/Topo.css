@@ -7,19 +7,19 @@
   width: 2140px;
   height: 900px;
 }
-
 #h1 {
   font-size: 36px;
-  color: #230c33; /* Matching deep purple color */
+  color: black;
   margin-bottom: 20px;
-  padding: 20px; 
+  padding: 20px;
+  text-shadow: 2px 2px 2px white; /* Adding a white shadow */
 }
 
 #h2 {
   font-size: 24px;
-  color: #145377; /* Matching deep blue color */
+  color: #145377;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 15px;
+  text-shadow: 2px 2px 2px white; /* Adding a white shadow */
 }
-

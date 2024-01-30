@@ -6,3 +6,4 @@ export * from "./dataPokemon";
 export * from "./typePokemon";
 export * from "./paginacion";
 export * from "./topoGame";
+export * from "./dataDigimon";

@@ -1,6 +1,6 @@
 import "./TopoBoard.css";
-// import { setIdMoleOne, setIdMoleTwo } from "../global/state/topoState";
 import { setMole, setPlant, selectTile } from "../../utils";
+import { setIdMoleOne, setIdMoleTwo } from "../../global/state/topoState";
 
 export const TopoBoard = () => {
   //set up the grid in html
@@ -19,6 +19,8 @@ export const TopoBoard = () => {
     2000
   ); /**HAY QUE LIMPIARLO CON CLEAR INTERVAL
   setIdMoleTwo(idIntervalPlant); */
-  setInterval(setMole, 1000); // 1000 miliseconds = 1 second, every 1 second call setMole
-  setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant
+  const idMoleInterval = setInterval(setMole, 1000); // 1000 miliseconds = 1 second, every 1 second call setMole
+  const idPlantInterval = setInterval(setPlant, 2000); // 2000 miliseconds = 2 seconds, every 2 second call setPlant
+  setIdMoleOne(idMoleInterval);
+  setIdMoleTwo(idPlantInterval);
 };

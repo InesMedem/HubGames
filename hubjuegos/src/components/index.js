@@ -5,3 +5,4 @@ export * from "./Spinner/Spinner";
 export * from "./ButtonFilter/ButtonFilter";
 export * from "./spinner/SpinnerButton";
 export * from "./TopoBoard/TopoBoard";
+export * from "./CartaDigimon/CartaDigimon";

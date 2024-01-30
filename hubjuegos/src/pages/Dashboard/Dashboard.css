@@ -20,14 +20,14 @@
       width: 350px;
       height: 350px;
       border-radius: 50%;
-      background-color: #230c33; /* Matching deep purple color */
-      color: #e89319; /* Matching orange color for text */
+      background-color: #0def04; /* Matching deep purple color */
+      color: white; /* Matching orange color for text */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0.5rem;
-      background: #230c33; /* Matching deep purple color */
+      margin: 0.8rem;
+      background: #145377; /* Matching deep purple color */
       -webkit-box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
       -moz-box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);
       box-shadow: 0px 8px 30px -3px rgba(0, 0, 0, 0.61);

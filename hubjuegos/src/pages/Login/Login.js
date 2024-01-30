@@ -5,9 +5,9 @@ import { initControler } from "../../utils/route";
 import "./Login.css";
 const template = () => `
   <div id="containerLogin">
-    <h1 id="titleLogin">LOGIN</h1>
+    <h1 id="titleLogin">👾 Entrara a jugar! 👾</h1>
     <input type="text" name="username" id="username" />
-    <button id="buttonLogin">enviar</button>
+    <button id="buttonLogin"> Login!</button>
   </div>
 `;
 

@@ -1,5 +1,4 @@
-// import mole state
-// import { setIdMoleOne, setIdMoleTwo } from "../global/state/topoState";
+export { setMole, setPlant, selectTile, getRandomTile };
 
 let currMoleTile;
 let currPlantTile;
@@ -50,7 +49,6 @@ const setPlant = () => {
   currPlantTile.appendChild(plant);
 };
 
-// changed to "old"" function because of the this
 function selectTile() {
   if (gameOver) {
     return;
@@ -64,10 +62,3 @@ function selectTile() {
     gameOver = true;
   }
 }
-
-/**poner aqui el clear
-const stopInterval = () => {
-  clearInterval(setGame);
-};*/
-
-export { setMole, setPlant, selectTile, getRandomTile };
