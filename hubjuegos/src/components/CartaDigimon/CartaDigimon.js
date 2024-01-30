@@ -1,18 +1,21 @@
 import "./CartaDigimon.css";
 
 export const CartaDigimon = (data) => {
-  document.getElementById("galleryDigimon").innerHTML = "";
+  const galleryDigimonElement = document.getElementById("galleryDigimon");
+  galleryDigimonElement.innerHTML = "";
 
-  data.map((digimon) => {
+  data.forEach((digimon) => {
     const templateFigure = ` 
 
-            <div id="figure">
-        <img id= "img" src=${digimon.image} />
-        <h3>${digimon.name}</h3>
-             </div>`;
+        <div id="figure">
 
-    document.getElementById("galleryDigimon").innerHTML += templateFigure;
+            <img id= "img" src=${digimon.image}/>
+            <h3>${digimon.name}</h3>
+      
+        </div>`;
 
-    addListeners(data);
+    // document.getElementById("galleryDigimon").innerHTML += templateFigure;
+    galleryDigimonElement.innerHTML += templateFigure;
   });
+  addListeners(data);
 };
