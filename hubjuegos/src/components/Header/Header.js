@@ -11,7 +11,7 @@ import "./Header.css";
 
 const template = () => `
   <img
-    src="https://res.cloudinary.com/dq186ej4c/image/upload/v1682679162/header_giqdug.jpg"
+    src="https://res.cloudinary.com/dwfemumfv/image/upload/v1706606296/Untitled_design_eefs4r.png"
     alt="title hub game website (app)"
     class="logo"
   />

@@ -1,3 +1,6 @@
+// import mole state
+// import { setIdMoleOne, setIdMoleTwo } from "../global/state/topoState";
+
 let currMoleTile;
 let currPlantTile;
 let score = 0;
@@ -61,5 +64,10 @@ function selectTile() {
     gameOver = true;
   }
 }
+
+/**poner aqui el clear
+const stopInterval = () => {
+  clearInterval(setGame);
+};*/
 
 export { setMole, setPlant, selectTile, getRandomTile };

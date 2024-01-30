@@ -1,12 +1,11 @@
 .figurePokemon {
-    width: 200px;
-    height: 280px;
-    border-radius: 12px;
+    width: 250px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 1rem;
+    margin: 2rem;
   
     & img {
       height: 180px;
@@ -27,119 +26,146 @@
   }
   
   .grass {
-    background-color: #63bb5b75;
+    background-color: #3e8e463b;
   }
+  
   figure.grass {
-    border: 10px solid #63bb5b;
+    border: 10px solid #3e8e46;
   }
   
   figure.bug {
-    border: 10px solid #8fc12c;
+    border: 10px solid #6b9f1e;
   }
+  
   .bug {
-    background-color: #8fc12c80;
+    background-color: #6b9f1e80;
   }
   
   figure.dark {
-    border: 10px solid #5a5366;
+    border: 10px solid #494552;
   }
+  
   .dark {
-    background-color: #5a536687;
+    background-color: #49455287;
   }
+  
   figure.dragon {
-    border: 10px solid #0a6dc4;
+    border: 10px solid #084b96;
   }
+  
   .dragon {
-    background-color: #0a6dc482;
+    background-color: #084b9682;
   }
+  
   figure.electric {
-    border: 10px solid #f3d13b;
+    border: 10px solid #d0b92e;
   }
+  
   .electric {
-    background-color: #f3d13b75;
+    background-color: #d0b92e75;
   }
   
   figure.fairy {
-    border: 10px solid #ec8fe6;
+    border: 10px solid #c57ccf;
   }
+  
   .fairy {
-    background-color: #ec8fe67e;
+    background-color: #c57ccf7e;
   }
+  
   figure.fighting {
-    border: 10px solid #ce4068;
+    border: 10px solid #a23151;
   }
+  
   .fighting {
-    background-color: #ce406884;
+    background-color: #a2315184;
   }
   
   figure.fire {
-    border: 10px solid #ff9b54;
+    border: 10px solid #e77a3a;
   }
+  
   .fire {
-    background-color: #ff9b546f;
+    background-color: #e77a3a6f;
   }
   
   figure.flying {
-    border: 10px solid #8fa8dd;
+    border: 10px solid #6c7fae;
   }
+  
   .flying {
-    background-color: #8fa8dd7c;
+    background-color: #6c7fae7c;
   }
+  
   figure.ghost {
-    border: 10px solid #5269ac;
+    border: 10px solid #3c4c80;
   }
+  
   .ghost {
-    background-color: #5269ac7e;
+    background-color: #3c4c807e;
   }
   
   figure.ground {
-    border: 10px solid #d97746;
+    border: 10px solid #a05b36;
   }
+  
   .ground {
-    background-color: #d977467c;
+    background-color: #a05b367c;
   }
+  
   figure.ice {
-    border: 10px solid #74cec1;
+    border: 10px solid #5fbcb2;
   }
+  
   .ice {
-    background-color: #74cec17e;
+    background-color: #5fbcb27e;
   }
+  
   figure.normal {
-    border: 10px solid #9099a1;
+    border: 10px solid #6f7780;
   }
+  
   .normal {
-    background-color: #9099a17b;
+    background-color: #6f77807b;
   }
   
   figure.poison {
-    border: 10px solid #aa6ac8;
+    border: 10px solid #8c4f9e;
   }
+  
   .poison {
-    background-color: #aa6ac87a;
+    background-color: #8c4f9e7a;
   }
   
   figure.psychic {
-    border: 10px solid #f97176;
+    border: 10px solid #d1545b;
   }
+  
   .psychic {
-    background-color: #f971767e;
+    background-color: #d1545b7e;
   }
+  
   figure.rock {
-    border: 10px solid #c7b78b;
+    border: 10px solid #a09671;
   }
+  
   .rock {
-    background-color: #c7b78b78;
+    background-color: #a0967178;
   }
   
   figure.steel {
-    border: 10px solid #5a8ea1;
+    border: 10px solid #4b758f;
   }
+  
   .steel {
-    background-color: #5a8ea17e;
+    background-color: #4b758f7e;
   }
+  
   figure.water {
-    border: 10px solid #4d91d5;
+    border: 10px solid #3b7ec7;
   }
+  
   .water {
-    background-color: #4d91d575;
+    background-color: #3b7ec775;
   }
+  
