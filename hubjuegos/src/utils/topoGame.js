@@ -1,9 +1,7 @@
-import {
-  currMoleTile,
-  currPlantTile,
-  score,
-  gameOver,
-} from "../global/state/topoState";
+let currMoleTile;
+let currPlantTile;
+let score = 0;
+let gameOver = false;
 
 const getRandomTile = () => {
   //math.random --> 0-1 --> (0-1) * 9 = (0-9) --> round down to (0-8) integers
@@ -19,7 +17,8 @@ const setMole = () => {
     currMoleTile.innerHTML = "";
   }
   let mole = document.createElement("img");
-  mole.src = "./monty-mole.png";
+  mole.src =
+    "https://res.cloudinary.com/dwfemumfv/image/upload/v1706460881/monty-mole_mcr9fu.png";
 
   let num = getRandomTile();
   if (currPlantTile && currPlantTile.id == num) {
@@ -37,7 +36,8 @@ const setPlant = () => {
     currPlantTile.innerHTML = "";
   }
   let plant = document.createElement("img");
-  plant.src = "./piranha-plant.png";
+  plant.src =
+    "https://res.cloudinary.com/dwfemumfv/image/upload/v1706460883/piranha-plant_jetrep.png";
 
   let num = getRandomTile();
   if (currMoleTile && currMoleTile.id == num) {
