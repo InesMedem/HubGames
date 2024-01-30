@@ -15,7 +15,6 @@ const template = () => `
 //! ------------------------------------------------------------------------------
 //? ---------------------FUNCION QUE SE EXPORTA QUE PINTA LA PAGINA--------------
 //! ------------------------------------------------------------------------------
-
 export const PrintTopoPage = () => {
   document.querySelector("main").innerHTML = template();
   TopoBoard();

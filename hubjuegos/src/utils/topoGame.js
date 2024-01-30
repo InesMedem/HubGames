@@ -47,7 +47,8 @@ const setPlant = () => {
   currPlantTile.appendChild(plant);
 };
 
-const selectTile = () => {
+// changed to "old"" function because of the this
+function selectTile() {
   if (gameOver) {
     return;
   }
@@ -59,6 +60,6 @@ const selectTile = () => {
       "GAME OVER: " + score.toString(); //update score html
     gameOver = true;
   }
-};
+}
 
 export { setMole, setPlant, selectTile, getRandomTile };
